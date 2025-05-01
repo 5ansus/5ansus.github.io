@@ -1,0 +1,16 @@
+projects:
+  - title: "Modelos Híbridos de Transformers con Submódulos Cuánticos"
+    investigador: "Jaime Blieza"
+    categoria: ["IA", "Computación Cuántica"]
+    description: "El proyecto propone desarrollar un modelo híbrido para la representación del lenguaje natural que integra técnicas clásicas con computación cuántica. Nuestra idea es combinar métodos de procesamiento de lenguaje modernos—como embeddings preentrenados y arquitecturas Transformer—con submódulos cuánticos que transforman datos clásicos en estados cuánticos mediante feature maps. Esta fusión aprovecha la capacidad del espacio cuántico para capturar relaciones complejas y no lineales en los datos, lo que puede conducir a representaciones más ricas y robustas del lenguaje. El enfoque híbrido no solo busca mejorar la precisión en tareas como clasificación y análisis semántico, sino también explorar nuevas formas de optimización y generación de conocimiento. Invitamos a investigadores y colaboradores a unirse a esta iniciativa para impulsar la frontera de la inteligencia artificial y la computación cuántica."
+    link: "https://docs.google.com/forms/d/e/1FAIpQLScXT_bqfvrov2DxxNVWf7OunU04NNZ9hGfw0tnSJMwC6YScBQ/viewform?usp=dialog"
+  - title: "CaPRA-Tree: A High-Performance Indexing B-Tree Type Structure for Next-Generation Database Systems"
+    investigador: "Enrique Anguiano-Vara"
+    categoria: ["Algoritmia", "Estructuras de Datos"]
+    description: "The CaPRA-Tree (Concurrent, Adaptive, Persistent, Reliable Access Tree) introduces a revolutionary approach to data indexing, combining the efficiency of B-type-Trees into a hybrid structure optimized for next-generation database systems. This high-performance B-Tree type structure enhances query speed, optimizes storage, and supports concurrent access, making it ideal for large-scale, distributed, and high-demand environments. With an adaptive design, the CaPRA-Tree ensures persistence and reliability, providing both rapid access to data and consistent performance under heavy workloads. Its scalability and reliability position it as the ideal indexing solution for modern database systems, including those used in big data, IoT, and real-time applications. Inspired and developed under the CPrA initiative."
+    link: "https://docs.google.com/forms/d/e/1FAIpQLScXT_bqfvrov2DxxNVWf7OunU04NNZ9hGfw0tnSJMwC6YScBQ/viewform?usp=dialog"
+  - title: "Optimización en rutas de aparcamiento"
+    investigador: "Héctor Sanz Martín"
+    categoria: ["Matemáticas", "Optimización", "Teoría de Grafos"]
+    description: "Se busca encontrar la mejor ruta para aparcar dado parámetros presumiblemente conocidos, como puede ser el tiempo que toma transitar una calle o la distancia al destino, y aproximarse al problema desde un punto de vista discreto basado en la teoría de grafos"
+    link: "https://docs.google.com/forms/d/e/1FAIpQLScXT_bqfvrov2DxxNVWf7OunU04NNZ9hGfw0tnSJMwC6YScBQ/viewform?usp=dialog"

@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,14 +7,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="src.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-hidden">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top"> UAM-CPrA
+                    <img src="img/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top"> UAM-CPrA
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -44,105 +47,72 @@
             <br>
             <br>
             <div class="row">
-                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                    data-aos="fade-up" data-aos-delay="200">
                     <h1>UAM-CPrA</h1>
-                    <h2>Asociación de Programación Competitiva de la Universidad Autónoma de Madrid</h2>
+                    <h2>Autonomous University of Madrid Competitive Programming & research Association</h2>
                     <blockquote>
                         <i>"Controlling complexity is the essence of computer programming" ~ Brian Kernighan</i>
                     </blockquote>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="logo.png" class="img-fluid" alt="" style="max-width: 100%;">
+                    <img src="img/logo.png" class="img-fluid" alt="" style="max-width: 100%;">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Image just an example. Sadly, im not in that photo -->
-    <!-- The idea is to get all our achivements here -->
     <section id="carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-            <a href="https://ada-byron.es/2024/reg/madrid/">
-                <div style="background-color: rgb(241, 226, 175); display: flex; justify-content: center; align-items: center; height: 100%;">
-                <img src="canvas1.jpg" class="d-block w-100" alt="Image 1">
-                </div>
-                <div class="carousel-caption d-none d-md-block text-dark" style="background-color: rgba(255, 255, 255, 0.7);">
-                <h5>Recuerdos: AdaByron Regional 2024</h5>
-                </div>
-            </a>
-            </div>
-            <div class="carousel-item">
-            <a href="https://swerc.eu/2024/">
-                <div style="background-color: rgb(241, 226, 175); display: flex; justify-content: center; align-items: center; height: 100%;">
-                <img src="fotoPrueba1.jpeg" class="d-block w-100" alt="Image 2">
-                </div>
-                <div class="carousel-caption d-none d-md-block text-dark" style="background-color: rgba(255, 255, 255, 0.7);">
-                <h5>Recuerdos: SWERC 24 - Lisboa </h5>
-                </div>
-            </a>
-            </div>
-            <div class="carousel-item">
-            <a href="https://uam-cpra.github.io/std-ULeague.github.io/">
-                <div style="background-color: rgb(241, 226, 175); display: flex; justify-content: center; align-items: center; height: 100%;">
-                <img src="logoWithBackground.png" class="d-block" alt="Image 3" style="max-width: 100%; max-height: 100%;">
-                </div>
-                <div class="carousel-caption d-none d-md-block text-dark" style="background-color: rgba(255, 255, 255, 0.7);">
-                <h5>NOTICIA: std::ULeague empieza a finales de Febrero! Preparate!</h5>
-                </div>
-            </a>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    <div class="carousel-inner" id="carousel-inner"></div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
     </section>
+
     <section id="quienes-somos" class="bg-light">
         <div class="container">
             <div class="row">
-                <!-- STEM Projects Column -->
-                <div class="col-md-6" style="background: linear-gradient(to bottom right, purple 50%, rgb(159, 65, 214) 50%); color: white; padding: 20px;">
-                    <h2>STEM Projects</h2>
+                <div class="col-md-6" style="padding: 20px;">
+                    <h2>Who are we?</h2>
                     <p>
-                        En UAM-CPrA, también nos enfocamos en proyectos STEM que combinan ciencia, tecnología, ingeniería y matemáticas. 
-                        Estos proyectos buscan fomentar la innovación y el aprendizaje práctico, permitiendo a los estudiantes aplicar sus conocimientos en desafíos del mundo real.
-                    </p>
-                    <p></p>
-                        Desde el desarrollo de software hasta la creación de soluciones tecnológicas, nuestros proyectos están diseñados para inspirar y empoderar a los estudiantes a explorar nuevas fronteras en el ámbito STEM.
-                    </p>
-                </div>
-
-                <!-- Original Content Column -->
-                <div class="col-md-6" style="background: linear-gradient(to bottom left, blue 50%, rgb(15, 81, 182) 50%); color: white; padding: 20px;">
-                    <h2>¿Quiénes somos?</h2>
+                        CPrA at UAM builds on a principle that originated in a previous community, now inactive (<a
+                            href="https://dotq-research.github.io/" style="color: grey;">dotQ</a>), co-founded by its
+                        founder: a principle centered on <em>
+                            uniting intrepid and enthusiastic individuals passionate about STEM research and competitive
+                            programming. </em>
+                        This association was created to preserve the outstanding values that were found in that
+                        now-inactive community.</p>
+                    <h5></h5>
                     <p>
-                        Somos alumnos y profesores de la UAM que nos une un tema en común: <em>la programación competitiva</em>.
-                        Nos une la pasión por la programación y la resolución de problemas con una resolución eficiente y elegante con el objetivo de sacar el mayor número de problemas en el menor tiempo posible.
-                        Nos reunimos para aprender, enseñar y competir en concursos de programación, dando igual el nivel de cada uno.
+                        Programming and research require (and need to promote) a principle of creativity and free
+                        thinking, regardless of its size, as long as it is beautiful
+                        or functional.
+                        <em>Here, you have to reinvent the wheel, and if you make it square, so what? Let's adapt the
+                            terrain then, and learn from it. But only on one condition: create it yourself, because
+                            creating is the closest thing to inventing. And then, create it again to improve it.</em>
                     </p>
-                    <h5>Nuevos integrantes (Miembros)</h5>
+                    <h5></h5>
                     <p>
-                        La programación requiere (y hace falta impulsar) un principio de creatividad, y de libre pensamiento, dando igual su tamaño, sea bella y funcional.
-                        <em>En la programación hay que reinventar la rueda, y si la haces cuadrada, ¿qué más da? Modifiquemos el terreno entonces, 
-                        y aprendamos de ello. Pero solo con una condición, invéntala tú, pues programar es lo más parecido a inventar. Y luego vuelve a inventarla para mejorarla.</em>
-                    </p>
-                    <h5>Integrantes expertos (Mentores)</h5>
-                    <p>
-                        Cuando uno enseña su potencial, se convierte en un mentor. Un mentor se basa en:
-                        <ul>
-                            <li>Mayor participación en los concursos de programación nacionales, europeos e internacionales con posibilidad de completa financiación para competir.</li>
-                            <li>Ayudar y enseñar a los Miembros de la asociación para que, en un futuro, puedan ser Mentores.</li>
-                            <li>Participación en la organización de concursos de programación en la UAM para los Miembros y/o estudiantes de la UAM.</li>
-                        </ul>
+                        In this association, we welcome members from all around the world to collaborate together, work
+                        on research projects, and engage in various activities, regardless
+                        of your educational background. <em>At CPrA, you will be valued by everyone for your skills and
+                            abilities, not your degrees. Here, we all work together as a team for the sake of
+                            research.</em>
                     </p>
                     <button class="btn btn-secondary">
-                        <a href="./Mentores.html" style="color: white; text-decoration: none; border-bottom: none;">Hecha un vistazo a nuestros Mentores</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdihIGBGy9yiweFVNLHlfKLk6WwK1vkJT8Ejz2b5cmpdPNM2A/viewform?usp=dialog"
+                            style="color: white; text-decoration: none; border-bottom: none;">Click here to join
+                            CPrA</a>
                     </button>
+                </div>
+                <!-- Map Column (Right) -->
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div id="map-container" style="width: 100%; max-width: 600px; margin: auto;"></div>
                 </div>
             </div>
         </div>
@@ -151,29 +121,42 @@
     <section id="actividades" style="background-color: #F1F1F1">
         <div class="container">
             <br>
-            <h2>Actividades</h2>
+            <h2>Top Activities</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <p>Actualmente tenemos en mente las siguientes actividades:</p>
+                    <p>We currently have the following activities active:</p>
+                    <h6>STEM Research</h6>
                     <ul>
-                        <li>Concursos internacionales: <i><a href="https://swerc.eu/" style="color: grey;">SWERC</a> -> <a href="https://icpc.global/" style="color: grey;">ICPC</a></i></li>
-                        <li>Concursos nacionales: <a href="https://ada-byron.es/" style="color: grey;"><i>AdaByron</i></a></li>
-                        <li>Concursos interuniversitarios: <a href="https://uam-cpra.github.io/std-ULeague.github.io/" style="color: grey;"><i>std::ULeague</i></a></li>
-                        <li>Concursos locales</li>
-                        <li>Clases Mentores-Miembros</li>
-                        <li>Y mucho más!</li>
+                        <li><em>[<a href="https://docs.google.com/forms/d/e/1FAIpQLSfgrEpjrPj-Odl0ZKnvg5wqh9Mnj2s1wlg-CAkFAygBOIQQkQ/viewform?usp=dialog"
+                                    style="color: grey;">Registration period until June 20</a>]</em> CPrA Research
+                            Projects</li>
+                        <li><a href="" style="color: grey;">CPrA STEM-Talks</a>: We invite pioneering companies and
+                            researchers in their fields (e.g. Pasqal, quantum computing) to share insights about their
+                            work with us.</li>
+                    </ul>
+                    <h6>Competitive Programming</h6>
+                    <ul>
+                        <li>International competitive programming league co-founded by CPrA: <a
+                                href="https://uam-cpra.github.io/std-ULeague.github.io/"
+                                style="color: grey;"><i>std::ULeague</i></a></li>
+                        <li><em>[UAM Exclusive]</em> International competitive programming contest: <i><a
+                                    href="https://swerc.eu/" style="color: grey;">SWERC</a>, <a
+                                    href="https://icpc.global/" style="color: grey;">ICPC</a></i></li>
+                        <li><em>[UAM Exclusive]</em> National competitive programming contest: <a
+                                href="https://ada-byron.es/" style="color: grey;"><i>AdaByron</i></a></li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="icpc.png" class="img-fluid" alt="Description of Image 1" style="height: 200px;">
+                            <img src="img/icpc.png" class="img-fluid" alt="Description of Image 1" style="height: 200px;">
                         </div>
                         <div class="col-md-4">
-                            <img src="adabyron.png" class="img-fluid" alt="Description of Image 2" style="height: 200px;">
+                            <img src="img/adabyron.png" class="img-fluid" alt="Description of Image 2"
+                                style="height: 200px;">
                         </div>
                         <div class="col-md-4">
-                            <img src="eps.jpg" class="img-fluid" alt="Description of Image 3" style="height: 200px;">
+                            <img src="img/eps.jpg" class="img-fluid" alt="Description of Image 3" style="height: 200px;">
                         </div>
                     </div>
                 </div>
@@ -183,63 +166,85 @@
     </section>
 
 
-    <section id="Logros" style="background-color: #F1F1F1">
+    <section id="achievements" style="background-color: #F1F1F1">
         <div class="container" style="background-color: #FaFaFa; border-radius: 20px;">
-        <br>
-            <h2 style="color: #333; text-align: center; font-size: 28px; font-weight: bold;">Logros</h2>
-            <ul style="list-style-type: disc; margin-left: 20px;">
-                <li style="color: #333; font-size: 18px; font-weight: bold;">2024</li>
-                <ul style="list-style-type: circle; margin-left: 20px;">
-                    <li style="color: #333; font-size: 16px; font-weight: bold;">AdaByron Regional de Madrid:</li>
-                        <ul style="list-style-type: square; margin-left: 20px;">
-                            <li style="color: #333; font-size: 14px;">2 de los 3 equipos en el TOP 10 de la UAM, son del UAM-CPrA, se clasificaron para el nacional</li>
-                            <li style="color: #333; font-size: 14px;">El equipo de UAM-CPrA, Los Churreros (Marcos López, Marcos Hernanz, Enrique Anguiano Vara): 3º puesto en la general y 1º en su categoría (primero de carrera)</li>
+            <br>
+            <h2 style="color: #333; text-align: center; font-size: 28px; font-weight: bold;">Achievements</h2>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li>
+                    <button class="btn btn-link achievement-toggle" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#achievements2025" aria-expanded="false" aria-controls="achievements2025"
+                        style="color: #333; font-size: 18px; font-weight: bold; text-decoration: none;">
+                        &rarrc; 2025
+                    </button>
+                    <div class="collapse" id="achievements2025">
+                        <ul style="list-style-type: circle; margin-left: 20px;">
+                            <li style="color: #333; font-size: 16px; font-weight: bold;">Research Projects:</li>
+                            <ul style="list-style-type: square; margin-left: 20px;">
+                                <li style="color: #333; font-size: 14px;">First edition of CPrA research projects
+                                    successfully launched</li>
+                            </ul>
+                            <li style="color: #333; font-size: 16px; font-weight: bold;">STEM-Talks #1:</li>
+                            <ul style="list-style-type: square; margin-left: 20px;">
+                                <li style="color: #333; font-size: 14px;">STEM-Talks session held with Pasqal about
+                                    quantum computing</li>
+                            </ul>
+                            <li style="color: #333; font-size: 16px; font-weight: bold;">AdaByron Madrid Regional:</li>
+                            <ul style="list-style-type: square; margin-left: 20px;">
+                                <li style="color: #333; font-size: 14px;">The UAM-CPrA team, Los Churreros: 3rd place
+                                    overall and 2nd in their category. Qualified for the national contest</li>
+                            </ul>
                         </ul>
-                    <li style="color: #333; font-size: 16px; font-weight: bold;">AdaByron Nacional:</li>
-                        <ul style="list-style-type: square; margin-left: 20px;">
-                            <li style="color: #333; font-size: 14px;">El equipo de UAM-CPrA, The Fan Team (Marcos Rodríguez, Miguel Carballo, Jesús Alonso), TOP 15 en el Nacional</li>
+                    </div>
+                </li>
+                <li>
+                    <button class="btn btn-link achievement-toggle" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#achievements2024" aria-expanded="false" aria-controls="achievements2024"
+                        style="color: #333; font-size: 18px; font-weight: bold; text-decoration: none;">
+                        &rarrc; 2024
+                    </button>
+                    <div class="collapse" id="achievements2024">
+                        <ul style="list-style-type: circle; margin-left: 20px;">
+                            <li style="color: #333; font-size: 16px; font-weight: bold;">SWERC '24:</li>
+                            <ul style="list-style-type: square; margin-left: 20px;">
+                                <li style="color: #333; font-size: 14px;">The Fan Team and Los Churreros qualified to
+                                    compete at SWERC (Lisbon), with all expenses paid (November 30 - December 1)</li>
+                            </ul>
+                            <li style="color: #333; font-size: 16px; font-weight: bold;">AdaByron National:</li>
+                            <ul style="list-style-type: square; margin-left: 20px;">
+                                <li style="color: #333; font-size: 14px;">The UAM-CPrA team, The Fan Team (Marcos
+                                    Rodríguez, Miguel Carballo, Jesús Alonso), TOP 15 in the National contest</li>
+                            </ul>
+                            <li style="color: #333; font-size: 16px; font-weight: bold;">AdaByron Madrid Regional:</li>
+                            <ul style="list-style-type: square; margin-left: 20px;">
+                                <li style="color: #333; font-size: 14px;">2 out of the 3 UAM teams in the TOP 10 are
+                                    from UAM-CPrA, and qualified for the national contest</li>
+                                <li style="color: #333; font-size: 14px;">The UAM-CPrA team, Los Churreros (Marcos
+                                    López, Marcos Hernanz, Enrique Anguiano Vara): 3rd place overall and 1st in their
+                                    category (first-year students)</li>
+                            </ul>
                         </ul>
-
-                    <li style="color: #333; font-size: 16px; font-weight: bold;">SWERC '24:</li>
-                        <ul style="list-style-type: square; margin-left: 20px;">
-                            <li style="color: #333; font-size: 14px;">The Fan Team y Los Churreros consiguen entrar a competir en el SWERC (Lisboa), con todos los gastos pagados (30 de Noviembre - 1 de Diciembre)</li>
-                        </ul>
-                </ul>
+                    </div>
+                </li>
             </ul>
             <br>
         </div>
         <br>
-
     </section>
 
 
     <section id="unete" class="bg-light">
         <div class="container">
             <br>
-            <h2>Para lo que sea, estamos aqui!</h2>
+            <h2>Contact info</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Email</h5>
-                            <p class="card-text">uam.cpra@gmail.com</p>
+                            <p class="card-text">cpra.asociacion@uam.es</p>
                             <p></p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Github</h5>
-                            <button class="btn btn-secondary"><a href="https://github.com/UAM-CPrA" style="color: white; text-decoration: none; border-bottom: none;">Visita nuestro Github</a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Discord</h5>
-                            <button class="btn btn-secondary"><a href="https://discord.gg/ShNZzbA2Yr" style="color: white; text-decoration: none; border-bottom: none;">Únete a nuestro discord!</a></button>
                     </div>
                 </div>
             </div>
@@ -248,16 +253,127 @@
     </section>
 
 
+    <script>
+        fetch('jsonData/carousel.json')
+        .then(response => response.json())
+        .then(data => {
+            const carouselInner = document.getElementById('carousel-inner');
+            data.forEach((item, idx) => {
+            const div = document.createElement('div');
+            div.className = 'carousel-item' + (idx === 0 ? ' active' : '');
+            div.innerHTML = `
+                <a href="${item.href}">
+                <div style="background-color: rgb(241, 226, 175); display: flex; justify-content: center; align-items: center; height: 100%;">
+                    <img src="img/${item.img}" class="d-block w-100" alt="${item.alt}">
+                </div>
+                <div class="carousel-caption d-none d-md-block text-dark" style="background-color: rgba(255,255,255,0.7);">
+                    <h5>${item.caption}</h5>
+                </div>
+                </a>
+            `;
+            carouselInner.appendChild(div);
+            });
+        });
+    </script> 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-        
+    <!-- Example: World Map using SVG and D3.js (vanilla JS, not React) -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <style>
+        .country {
+            transition: fill 0.2s;
+        }
+
+        .country:hover {
+            stroke: #222;
+            stroke-width: 2;
+            fill: #f7b731 !important;
+            cursor: pointer;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: #fff;
+            border: 1px solid #333;
+            padding: 4px 8px;
+            border-radius: 4px;
+            pointer-events: none;
+            font-size: 14px;
+            color: #222;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            z-index: 10;
+        }
+    </style>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/topojson-client@3"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        Promise.all([
+            fetch("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json").then(r => r.json()),
+            fetch("jsonData/paises_valores.json").then(r => r.json())
+        ]).then(([worldData, valuesData]) => {
+            const width = 600, height = 350;
+            const svg = d3.select("#map-container")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .style("background", "none"); // Fondo transparente
+
+            const projection = d3.geoMercator()
+                .scale(100)
+                .translate([width / 2, height / 1.5]);
+
+            const path = d3.geoPath().projection(projection);
+
+            const countries = topojson.feature(worldData, worldData.objects.countries).features;
+
+            // Tooltip
+            const tooltip = d3.select("body")
+                .append("div")
+                .attr("class", "tooltip")
+                .style("opacity", 0);
+
+            // Escala de color azul claro a azul oscuro
+            const maxValue = d3.max(Object.values(valuesData));
+            const color = d3.scaleLinear()
+                .domain([0, maxValue])
+                .range(["#b3c6e0", "#08306b"]); // azul claro a azul oscuro
+
+            const g = svg.append("g");
+
+            g.selectAll("path")
+                .data(countries)
+                .enter().append("path")
+                .attr("d", path)
+                .attr("class", "country")
+                .attr("fill", d => valuesData[d.properties.name] ? color(valuesData[d.properties.name]) : "#f5f5f5") // gris suave
+                .attr("stroke", "#bbb")
+                .on("mouseover", function (event, d) {
+                    d3.select(this).raise().attr("fill", "#f7b731");
+                    tooltip.transition().duration(200).style("opacity", .95);
+                    tooltip.html((d.properties.name || "País") + (valuesData[d.properties.name] ? ": " + valuesData[d.properties.name] : ""))
+                        .style("left", (event.pageX + 10) + "px")
+                        .style("top", (event.pageY - 20) + "px");
+                })
+                .on("mousemove", function (event) {
+                    tooltip.style("left", (event.pageX + 10) + "px")
+                        .style("top", (event.pageY - 20) + "px");
+                })
+                .on("mouseout", function (event, d) {
+                    d3.select(this).attr("fill", valuesData[d.properties.name] ? color(valuesData[d.properties.name]) : "#f5f5f5");
+                    tooltip.transition().duration(200).style("opacity", 0);
+                });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
             // Ajusta este valor al alto de tu navbar
             var offset = 70; // Altura de la navbar
-        
+
             document.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', function(e) {
+                link.addEventListener('click', function (e) {
                     e.preventDefault();
                     var targetId = this.getAttribute('href');
                     var targetPosition = document.querySelector(targetId).offsetTop;
@@ -268,7 +384,7 @@
                 });
             });
         });
-        </script>
+    </script>
 </body>
 
 <nav>
@@ -278,5 +394,5 @@
         </div>
     </footer>
 </nav>
-</html>
 
+</html>

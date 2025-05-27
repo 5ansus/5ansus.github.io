@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mapa 3D Interactivo</title>
+  <style>
+    body { margin: 0; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+  <script>
+    // Escena
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({antialias: true});
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Controles
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+    // Luz
+    const light = new THREE.DirectionalLight(0xffffff, 1);
+    light.position.set(0, 1, 1).normalize();
+    scene.add(light);
+
+    // Grupo de países
+    const countriesGroup = new THREE.Group();
+    scene.add(countriesGroup);
+
+    // Mapa
+    d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json").then(worldData => {
+      const geojson = topojson.feature(worldData, worldData.objects.countries);
+      const projection = d3.geoMercator().translate([0, 0]).scale(100);
+      const geoPath = d3.geoPath().projection(projection);
+
+      geojson.features.forEach(feature => {
+        const shape = convertGeoToShape(feature, geoPath);
+        if (shape) {
+          const geometry = new THREE.ExtrudeGeometry(shape, { depth: 0.5, bevelEnabled: false });
+          const material = new THREE.MeshPhongMaterial({ color: 0x00aaff, flatShading: true });
+          const mesh = new THREE.Mesh(geometry, material);
+          mesh.name = feature.id; // ISO 3166-1 numeric
+          countriesGroup.add(mesh);
+        }
+      });
+    });
+
+    function convertGeoToShape(feature, path) {
+      const svgPath = path(feature);
+      if (!svgPath) return null;
+
+      const shapes = transformSVGPath(svgPath);
+      return shapes.length > 0 ? shapes[0] : null;
+    }
+
+    function transformSVGPath(pathStr) {
+      const paths = [];
+      const svgPath = new THREE.ShapePath();
+      const path = new THREE.Shape();
+      const commands = pathStr.match(/[a-df-z][^a-df-z]*/ig);
+
+      if (!commands) return [];
+
+      const tempCanvas = document.createElement('canvas');
+      const tempCtx = tempCanvas.getContext('2d');
+      const p = new Path2D(pathStr);
+      const points = [];
+
+      tempCtx.stroke(p); // just to force path parsing
+
+      return THREE.SVGLoader.createShapesFromPath(new Path2D(pathStr));
+    }
+
+    // Cámara
+    camera.position.z = 50;
+
+    // Loop
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+
+    animate();
+
+    // Simular nombrar un país
+    function levantarPais(paisID) {
+      const mesh = countriesGroup.children.find(m => m.name === paisID);
+      if (mesh) {
+        mesh.position.z += 2;
+        mesh.material.color.set(0xff6600);
+      }
+    }
+
+    // Ejemplo: levantar Brasil (ID 076)
+    setTimeout(() => levantarPais("076"), 3000); // Se levanta después de 3s
+  </script>
+</body>
+</html>

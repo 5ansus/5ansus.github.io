@@ -334,12 +334,12 @@
                 .attr("class", "tooltip")
                 .style("opacity", 0);
 
-            // Escala de color azul claro a azul oscuro
-            const maxValue = d3.max(Object.values(valuesData));
-            const color = d3.scaleLinear()
-                .domain([0, maxValue])
-                .range(["#b3c6e0", "#08306b"]); // azul claro a azul oscuro
+            const maxValue = d3.max(Object.values(valuesData).map(d => Math.log(d)));
+            const minValue = d3.min(Object.values(valuesData).filter(d => d > 0)); // evitar log(0)
 
+            const color = d3.scaleLog()
+                .domain([minValue, maxValue])
+                .range(["#b3c6e0", "#08306b"]); // azul claro a azul oscuro
             const g = svg.append("g");
 
             g.selectAll("path")

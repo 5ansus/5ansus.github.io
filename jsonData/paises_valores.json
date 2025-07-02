@@ -1,9 +1,9 @@
 {
-  "United States of America": 2,
+  "United States of America": 3,
   "Canada": 1,
-  "Spain": 42,
+  "Spain": 43,
   "Greece": 1,
-  "India": 17,
+  "India": 23,
   "Bangladesh": 2,
   "Denmark": 2,
   "Brazil": 1,
@@ -12,5 +12,9 @@
   "Tunisia": 1,
   "Australia": 1,
   "Germany": 1,
-  "Indonesia": 1
+  "Indonesia": 2,
+  "Turkey": 2,
+  "United Kingdom": 2,
+  "South Korea": 1,
+  "Mexico": 1
 }

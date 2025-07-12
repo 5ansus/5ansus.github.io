@@ -3,7 +3,7 @@
   "Canada": 2,
   "Spain": 43,
   "Greece": 1,
-  "India": 56,
+  "India": 61,
   "Bangladesh": 5,
   "Denmark": 2,
   "Brazil": 1,
@@ -15,9 +15,9 @@
   "Indonesia": 3,
   "Turkey": 2,
   "United Kingdom": 3,
-  "South Korea": 1,
+  "South Korea": 2,
   "Mexico": 1,
-  "Egypt": 2,
+  "Egypt": 3,
   "Taiwan": 2,
   "Saudi Arabia": 1,
   "Kosovo": 1,
@@ -26,5 +26,8 @@
   "Burkina Faso": 1,
   "Romania": 1,
   "Ghana": 1,
-  "United Arab Emirates": 1
+  "United Arab Emirates": 1,
+  "Netherlands": 1,
+  "Sudan": 1
+  
 }

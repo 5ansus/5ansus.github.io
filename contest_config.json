@@ -1,8 +1,8 @@
 {
 	"contest": {
 		"name": "Concurso Local: Intro 2025",
-		"start_time": "2025-10-02T11:00:00",
-		"duration_hours": 3,
+		"start_time": "2025-10-02T13:00:00",
+		"duration_hours": 168,
 		"auto_update_interval": 60
 	},
 	"problems": [
